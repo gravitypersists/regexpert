@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "main": "index.html",
+  "version": "y",
+  "authors": [
+    "Michael Silveira <gravitypersists@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

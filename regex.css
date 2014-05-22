@@ -1,0 +1,69 @@
+#app {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+
+.highlight {
+    background-color: rgb(189, 219, 182);
+    border: 1px solid rgb(141, 141, 141);
+}
+
+.attempt .highlight {
+    background-color: rgb(197, 199, 238);
+}
+
+.challenge, .attempt {
+    position: relative;
+    text-align: center;
+    top: 0px;
+    opacity: 1;
+    margin: 15px auto;
+    font-family: serif;
+    font-size: 32px;
+    -webkit-transition: all 1s;
+}
+
+.challenge {
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.attempt {
+    padding: 10px;
+}
+
+.regex-input {
+    text-align: center;
+    padding: 4px 20px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 9px;
+    background-color: rgb(233, 233, 233);
+    font-size: 27px;
+    width: 300px;
+    margin: 50px auto 20px auto;
+    display: block;
+    -webkit-transition: all 200ms linear;
+}
+
+.regex-input:focus {
+    border: 2px solid rgb(197, 199, 238);
+}
+
+.invalid {
+    border-color: red !important;
+}
+
+#app.great-success .challenge {
+    -webkit-transform: translate(0%, 60%);
+    opacity: 0;
+}
+
+#app.great-success .attempt {
+    -webkit-transform: translate(0%, -50%);
+}

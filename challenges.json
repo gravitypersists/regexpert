@@ -1,0 +1,73 @@
+{
+    "basic": [
+        {
+            "text": "I have 39 turtles. There are 39 turtles I have 39 turltes. There are 39 turtles I have 39 turltes. There are 39 turtles I have 39 turltes. There are 39 turtles I have 39 turltes.",
+            "match": "39"
+        }
+    ],
+    "|": [
+        {
+            "text": "There are 39 turtles I have 39 turltes.",
+            "match": "tur(tl|lt)es"
+        }
+    ],
+    "^": [
+        {
+            "text": "Please Please Me",
+            "match": "^Please"
+        }
+    ],
+    "$": [
+        {
+            "text": "home sweet home",
+            "match": "home$"
+        }
+    ],
+    ".": [
+        {
+            "text": "I gonna bag a big bug.",
+            "match": "b.g"
+        }
+    ],
+    "*": [
+        {
+            "text": "ac, abc, abbc, abbbbc, abbbbbbbbc",
+            "match": "ab*c"
+        }
+    ],
+    "+": [
+        {
+            "text": "ac, abc, abbc, abbbbc, abbbbbbbbc",
+            "match": "ab+c"
+        }
+    ],
+    "{}": [
+        {
+            "text": "ac, abc, abbc, abbbbc, abbbbbbbbc",
+            "match": "ab{2}c"
+        }
+    ],
+    "[]": [
+        {
+            "text": "a9c, a2c, abc, a3c, a0c",
+            "match": "a[0-9]c"
+        }
+    ],
+    "()": [
+        {
+            "text": "",
+            "match": ""
+        }
+    ],
+    "?": [
+        {
+            "text": "",
+            "match": ""
+        }
+    ],
+    "sentences": [
+        "I like turtles.",
+        "I have 39 turtles.",
+        "There are so many things to do."
+    ]
+}
