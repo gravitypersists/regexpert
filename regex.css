@@ -59,6 +59,33 @@
     border-color: red !important;
 }
 
+.show-answer-container {
+  position: relative;
+}
+
+.show-answer {
+    margin: 0 auto;
+    width: 70px;
+    color: rgb(211, 211, 211);
+    position: absolute;
+    right: 190px;
+    top: -17px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    -webkit-transition: all 200ms linear;
+}
+
+.answer {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  font-size: 27px;
+  color: rgb(32, 179, 120);
+}
+
 #app.great-success .challenge {
     -webkit-transform: translate(0%, 60%);
     opacity: 0;
