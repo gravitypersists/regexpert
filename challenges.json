@@ -1,32 +1,60 @@
 {
     "basic": [
         {
-            "text": "I have 39 turtles. There are 39 turtles I have 39 turltes. There are 39 turtles I have 39 turltes. There are 39 turtles I have 39 turltes. There are 39 turtles I have 39 turltes.",
-            "match": "39"
+            "text": "99 bottles of beer on the wall, 99 bottles of beer",
+            "match": "99",
+            "level": 0
+        }, {
+            "text": "A friend in need is a friend indeed",
+            "match": "friend",
+            "level": 0
+        }
+    ],
+    ".": [
+        {
+            "text": "a bird in the hand is worth two in the bush.",
+            "match": "hand|bush",
+            "level": 0
+        }, {
+            "text": "O what a tangled web we weave, When first we practise to deceive",
+            "match": "weave|deceive",
+            "level": 0
+        }, {
+            "text": "I love desk, I love table. I love lamp.",
+            "match": "desk|table|lamp",
+            "level": 1
         }
     ],
     "|": [
         {
-            "text": "There are 39 turtles I have 39 turltes.",
-            "match": "tur(tl|lt)es"
+            "text": "{ color: red }, { colour: blue }, { color: green }, { color: orange }, { colour: violet }",
+            "match": "col(o|ou)r",
+            "level": 0,
+            "dependencies": []
         }
     ],
     "^": [
         {
             "text": "Please Please Me",
-            "match": "^Please"
+            "match": "^Please",
+            "level": 0,
+            "dependencies": []
+        }, {
+            "text": "Hungry Hungry Hippos",
+            "match": "^Hungry",
+            "level": 0,
+            "dependencies": []
+        }, {
+            "text": "Home Sweet Home",
+            "match": "^Home",
+            "level": 0,
+            "dependencies": []
         }
     ],
     "$": [
         {
-            "text": "home sweet home",
-            "match": "home$"
-        }
-    ],
-    ".": [
-        {
-            "text": "I gonna bag a big bug.",
-            "match": "b.g"
+            "text": "Home Sweet Home",
+            "match": "Home$"
         }
     ],
     "*": [
@@ -66,8 +94,7 @@
         }
     ],
     "sentences": [
-        "I like turtles.",
-        "I have 39 turtles.",
-        "There are so many things to do."
+        "Nantucket bucket",
+        "nanometer, centimeter, millimeter"
     ]
 }
