@@ -59,11 +59,11 @@
     border-color: red !important;
 }
 
-.show-answer-container {
+.help-container {
   position: relative;
 }
 
-.show-answer {
+.show-answer, .show-hint {
     margin: 0 auto;
     width: 70px;
     color: rgb(211, 211, 211);
