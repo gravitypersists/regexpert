@@ -1,0 +1,182 @@
+{
+  "title": "Regex ",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "A character in the expression maps to a character in the search.",
+      "id": 3,
+      "ideas": {
+        "1": {
+          "title": "There are special characters that correspond to special functions",
+          "id": 4,
+          "ideas": {
+            "1": {
+              "title": "\\",
+              "id": 6,
+              "ideas": {
+                "1": {
+                  "title": "The immediate character following \\ in the expression is searched for",
+                  "id": 8,
+                  "ideas": {}
+                },
+                "2": {
+                  "title": "This only escapes special characters, for normal characters, like \\n and \\r, it does somethign else",
+                  "id": 54
+                }
+              },
+              "attr": {
+                "position": [
+                  184.9142135623731,
+                  -319,
+                  1
+                ],
+                "style": {}
+              }
+            },
+            "2": {
+              "title": "|",
+              "id": 9,
+              "ideas": {
+                "1": {
+                  "title": "OR operator - everything before it OR everything after it",
+                  "id": 10,
+                  "ideas": {}
+                }
+              },
+              "attr": {
+                "style": {}
+              }
+            },
+            "3": {
+              "title": "^",
+              "id": 13
+            },
+            "4": {
+              "title": "$",
+              "id": 14,
+              "ideas": {}
+            },
+            "5": {
+              "title": "*",
+              "id": 17
+            },
+            "6": {
+              "title": "+",
+              "id": 18
+            },
+            "7": {
+              "title": "?",
+              "id": 39
+            },
+            "8": {
+              "title": "( )",
+              "id": 40
+            },
+            "9": {
+              "title": "[ ]",
+              "id": 41
+            },
+            "10": {
+              "title": "{ }",
+              "id": 42
+            },
+            "11": {
+              "title": "There are also shorthand expressions that map to specific functions",
+              "id": 47,
+              "ideas": {
+                "1": {
+                  "title": "\\d",
+                  "id": 48,
+                  "ideas": {
+                    "1": {
+                      "title": "matches any digit [0-9]",
+                      "id": 56
+                    }
+                  }
+                },
+                "2": {
+                  "title": "\\s",
+                  "id": 50,
+                  "ideas": {
+                    "1": {
+                      "title": "matches any space",
+                      "id": 58
+                    }
+                  }
+                },
+                "3": {
+                  "title": "\\w",
+                  "id": 51,
+                  "ideas": {
+                    "1": {
+                      "title": "matches any word",
+                      "id": 59,
+                      "ideas": {
+                        "1": {
+                          "title": "What is a word?",
+                          "id": 60
+                        }
+                      }
+                    }
+                  }
+                },
+                "4": {
+                  "title": "You can negate these shorthand expressions by uppercasing them, ex: \\D, \\S, \\W",
+                  "id": 52
+                }
+              },
+              "attr": {
+                "position": [
+                  102.9142135623731,
+                  419,
+                  2
+                ],
+                "style": {}
+              }
+            },
+            "12": {
+              "title": "There are expressions for representing non-printable characters",
+              "id": 55,
+              "ideas": {
+                "1": {
+                  "title": "\\t",
+                  "id": 57
+                }
+              }
+            },
+            "2.5": {
+              "title": ".",
+              "id": 38
+            },
+            "1.5": {
+              "title": "In order to search for a special character, you will need to escape it",
+              "id": 43,
+              "ideas": {},
+              "attr": {
+                "position": [
+                  126,
+                  -261,
+                  3
+                ],
+                "style": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 6,
+      "ideaIdTo": 43,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ]
+}
