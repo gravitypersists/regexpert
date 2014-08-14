@@ -19,10 +19,6 @@
                   "title": "The immediate character following \\ in the expression is searched for",
                   "id": 8,
                   "ideas": {}
-                },
-                "2": {
-                  "title": "This only escapes special characters, for normal characters, like \\n and \\r, it does somethign else",
-                  "id": 54
                 }
               },
               "attr": {
@@ -75,33 +71,68 @@
             },
             "9": {
               "title": "[ ]",
-              "id": 41
+              "id": 41,
+              "ideas": {
+                "1": {
+                  "title": "Character Class",
+                  "id": 54,
+                  "ideas": {
+                    "1": {
+                      "title": "Matches only a single character",
+                      "id": 55
+                    },
+                    "2": {
+                      "title": "Order of characters in the class do not matter",
+                      "id": 57
+                    },
+                    "3": {
+                      "title": "You can use a hyphen to specify a range of characters",
+                      "id": 59,
+                      "ideas": {
+                        "1": {
+                          "title": "[a-z]",
+                          "id": 60,
+                          "ideas": {}
+                        },
+                        "2": {
+                          "title": "[A-Z]",
+                          "id": 62
+                        },
+                        "3": {
+                          "title": "[0-9]",
+                          "id": 63,
+                          "ideas": {}
+                        }
+                      }
+                    },
+                    "4": {
+                      "title": "You can negate a character class with a ^ after the first [ like so [^.]",
+                      "id": 64
+                    }
+                  }
+                }
+              }
             },
             "10": {
               "title": "{ }",
               "id": 42
             },
             "11": {
-              "title": "There are also shorthand expressions that map to specific functions",
+              "title": "There are also shorthand expressions that map to specific functions (these are character classes)",
               "id": 47,
               "ideas": {
                 "1": {
                   "title": "\\d",
                   "id": 48,
-                  "ideas": {
-                    "1": {
-                      "title": "matches any digit [0-9]",
-                      "id": 56
-                    }
-                  }
+                  "ideas": {}
                 },
                 "2": {
                   "title": "\\s",
                   "id": 50,
                   "ideas": {
                     "1": {
-                      "title": "matches any space",
-                      "id": 58
+                      "title": "whitespace character",
+                      "id": 71
                     }
                   }
                 },
@@ -110,14 +141,8 @@
                   "id": 51,
                   "ideas": {
                     "1": {
-                      "title": "matches any word",
-                      "id": 59,
-                      "ideas": {
-                        "1": {
-                          "title": "What is a word?",
-                          "id": 60
-                        }
-                      }
+                      "title": "\"word character\" matches [A-Za-z0-9_]",
+                      "id": 67
                     }
                   }
                 },
@@ -127,27 +152,18 @@
                 }
               },
               "attr": {
-                "position": [
-                  102.9142135623731,
-                  419,
-                  2
-                ],
                 "style": {}
-              }
-            },
-            "12": {
-              "title": "There are expressions for representing non-printable characters",
-              "id": 55,
-              "ideas": {
-                "1": {
-                  "title": "\\t",
-                  "id": 57
-                }
               }
             },
             "2.5": {
               "title": ".",
-              "id": 38
+              "id": 38,
+              "ideas": {
+                "1": {
+                  "title": "Matches any character (not \\n usually, though)",
+                  "id": 73
+                }
+              }
             },
             "1.5": {
               "title": "In order to search for a special character, you will need to escape it",
@@ -171,6 +187,26 @@
     {
       "ideaIdFrom": 6,
       "ideaIdTo": 43,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 47,
+      "ideaIdTo": 54,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 63,
+      "ideaIdTo": 48,
       "attr": {
         "style": {
           "color": "#FF0000",
