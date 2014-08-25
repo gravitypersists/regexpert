@@ -86,4 +86,4 @@ makeSuccess = ->
 
 # --- #
 
-pickChallenge '*'
+pickChallenge 'esc', 0

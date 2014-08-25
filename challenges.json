@@ -1,6 +1,11 @@
 {
     "basic": [
         {
+            "id": "maude",
+            "text": "Don't get officious. You're not yourself when you're officious - That is the curse of a government job.",
+            "match": "officious",
+            "level": 0
+        }, {
             "text": "99 bottles of beer on the wall, 99 bottles of beer",
             "match": "99",
             "level": 0
@@ -8,29 +13,69 @@
             "text": "A friend in need is a friend indeed",
             "match": "friend",
             "level": 0
-        }
-    ],
-    ".": [
-        {
-            "text": "a bird in the hand is worth two in the bush.",
-            "match": "hand|bush",
-            "level": 0
         }, {
-            "text": "O what a tangled web we weave, When first we practise to deceive",
-            "match": "weave|deceive",
+            "text": "time and time again",
+            "match": "time",
             "level": 0
-        }, {
-            "text": "I love desk, I love table. I love lamp.",
-            "match": "desk|table|lamp",
-            "level": 1
         }
     ],
     "|": [
         {
-            "text": "{ color: red }, { colour: blue }, { color: green }, { color: orange }, { colour: violet }",
-            "match": "col(o|ou)r",
+            "id": "notorgy",
+            "text": "I see a ship in the harbour, I can and shall obey",
+            "match": "can|shall",
+            "hint": "ship|harbour",
+            "level": 0
+        }, {
+            "id": "marmion",
+            "text": "Oh what a tangled web we weave, When first we practise to deceive",
+            "match": "weave|deceive",
+            "level": 0
+        }, {
+            "id": "brick",
+            "text": "I love desk, I love table. I love lamp.",
+            "match": "desk|table|lamp",
+            "hint": "love|table|lamp",
+            "level": 1
+        }, {
+            "id": "kinks",
+            "text": "This time tomorrow where will we be? On a spaceship somewhere, sailing across an empty sea",
+            "match": "be|sea",
             "level": 0,
             "dependencies": []
+        }, {
+            "text": "{ color: red }, { colour: blue }, { color: green }, { color: orange }, { colour: violet }",
+            "match": "col(o|ou)r",
+            "level": 1,
+            "dependencies": []
+        }, {
+            "id": "auden",
+            "text": "Where the dogs go on with their doggy life",
+            "match": "dog(s|gy)",
+            "level": 1
+        }, {
+            "id": "mcmurphy",
+            "text": "Which one of you nuts has got any guts?",
+            "match": "(n|g)uts",
+            "level": 1
+        }
+    ],
+    ".": [
+
+    ],
+    "esc": [
+        {
+            "id": "martha",
+            "text": "George and Martha: Sad, sad, sad.",
+            "match": "sad\\.",
+            "hint": "\\.",
+            "level": 0
+        }, {
+            "id": "cradle",
+            "text": "Tiger got to hunt, bird got to fly; Man got to sit and wonder 'why, why, why?'",
+            "match": "why\\?",
+            "hint": "\\?",
+            "level": 0
         }
     ],
     "^": [
@@ -67,6 +112,12 @@
         {
             "text": "ac, abc, abbc, abbbbc, abbbbbbbbc",
             "match": "ab+c"
+        }, {
+            "id": "bartleby",
+            "text": "Imagine my surprise, nay, my consternation, when without moving from his privacy, Bartleby, in a singular mild, firm voice, replied, \"I would prefer not to.\"&nbsp;" ,
+            "match": "\".+\"",
+            "level": 1,
+            "dependencies": ["."]
         }
     ],
     "{}": [
@@ -93,8 +144,18 @@
             "match": ""
         }
     ],
+    "modifier": [
+        {
+            "id": "graduate",
+            "text": "There's a great future in plastics. Think about it. Will you think about it?",
+            "match": "(?i)think",
+            "level": 1
+        }
+    ],
     "sentences": [
+        "The mind is its own place, and in itself<br>Can make a heav'n of hell, a hell of heav'n.",
         "Nantucket bucket",
-        "nanometer, centimeter, millimeter"
+        "nanometer, centimeter, millimeter",
+        "Sand is overrated. It's just tiny, little rocks."
     ]
 }
