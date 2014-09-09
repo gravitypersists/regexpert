@@ -46,12 +46,35 @@
             },
             "3": {
               "title": "^",
-              "id": 13
+              "id": 13,
+              "ideas": {
+                "2": {
+                  "title": "Matches the position before the first character in the string",
+                  "id": 76,
+                  "ideas": {}
+                },
+                "3": {
+                  "title": "anchors",
+                  "id": 74,
+                  "ideas": {},
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
             },
             "4": {
               "title": "$",
               "id": 14,
-              "ideas": {}
+              "ideas": {
+                "1": {
+                  "title": "Matches the position after the first character in the string",
+                  "id": 78
+                }
+              },
+              "attr": {
+                "style": {}
+              }
             },
             "5": {
               "title": "*",
@@ -207,6 +230,16 @@
     {
       "ideaIdFrom": 63,
       "ideaIdTo": 48,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 14,
+      "ideaIdTo": 74,
       "attr": {
         "style": {
           "color": "#FF0000",
